@@ -9,7 +9,7 @@ url:                https://9host1st.github.io # main url
 baseurl:            / 
 permalink:          /:title # Post permalink
 timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-mathjax:            true  # enables support for mathjax - set to 'false' to disable
+use_math: true
 
 # Site Build
 highlighter:        rouge
