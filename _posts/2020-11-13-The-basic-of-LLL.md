@@ -23,15 +23,15 @@ use_math: true
 
 **Orthogonal** : 어떠한 $m$ 차원 실수공간 $\mathbb{R}^m$ 의 벡터공간 $\mathbf{V}$ 의 벡터 $\mathbb{u}, \mathbb{w}$ 를 정의하자. 이때 $\mathbb{u} = (x_1, x_2, \ldots, x_m), \mathbb{w} = (y_1, y_2, \ldots, y_m) $ 라고 하면, 두 벡터의 내적곱은 $\mathbb{u} \cdot \mathbb{w} = x_1y_1 + x_2y_2 + \ldots + x_my_m$  라고 하고, 두 내적곱의 결과가 0이면 두 벡터는 **orthogonal** (직교) 한다고 한다. 
 
-**Norm** : $\mathbb{v}$ 의 길이, 혹은 euclidean norm은 다음과 같이 구할 수 있다. $$ \| \mathbb{v}\| = \sqrt{x_1^2 + x_2^2 + \ldots + x_m^2}$$
+**Norm** : $\mathbb{v}$ 의 길이, 혹은 euclidean norm은 다음과 같이 구할 수 있다. $$\| \mathbb{v}\| = \sqrt{x_1^2 + x_2^2 + \ldots + x_m^2}$$
 
-**Orthogonal Basis** : 벡터 공간 $\mathbb{V}$ 의 Orthogonal Basis (정규직교기저) 라고 함은 벡터공간의 기저 $\mathbb{v_1}, \mathbb{v_2}, \ldots, \mathbb{v_n}$ 들이 서로 다음 조건을 만족하면 Orthogonal Basis 라고 한다. $$ \mathbb{v}_i \cdot \mathbb{v}_j = \mathbb{0} \mbox{ for all } i \ne j.$$  
+**Orthogonal Basis** : 벡터 공간 $\mathbb{V}$ 의 Orthogonal Basis (정규직교기저) 라고 함은 벡터공간의 기저 $\mathbb{v_1}, \mathbb{v_2}, \ldots, \mathbb{v_n}$ 들이 서로 다음 조건을 만족하면 Orthogonal Basis 라고 한다. $$\mathbb{v}_i \cdot \mathbb{v}_j = \mathbb{0} \mbox{ for all } i \ne j.$$  
 
 그리고 많은 선형 대수 이론들이 orthogonal 하거나 orthogonal basis 라고 가정을 한 상태에서 만들어진 공식들이 많다고 한다. 생각을 좀 해봤는데  orthogonal 하다고 가정하면 게산도 그렇고 여러모로 편한점이 많은 것 같다. 그래서 직교를 좋아하는 듯 zzzz. 
 
 그리고 만약 $\mathbb{v}_1, \mathbb{v}_2, \ldots \mathbb{v}_n$ 가 정규직교기저고 $\mathbb{v} = \alpha_1\mathbb{v}_1 + \alpha_2\mathbb{v}_2 + \cdots + \alpha_n\mathbb{v}_n$ 가 기저들의 선형 결합으로 표현된다면, 
 
-$$ \|\mathbb{v}\| = \|\ \alpha_!\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_n\|^2 = (\alpha_1\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_2) \cdot (\alpha_1\mathbb{v}_1 + \cdots \alpha_n\mathbb{v}_n) = \sum_{i=1}^{n} \sum_{j=1}^{n} \alpha_i\alpha_j(\mathbb{v}_i \cdot \mathbb{v}_j) = \sum_{i=1}^{n} \alpha_i^2\|\mathbb{v}_i\|^2 \mbox{ since } \mathbb{v}_i \cdot \mathbb{v}_j = 0 \mbox { for } i \ne j.$$
+$$\|\mathbb{v}\| = \|\ \alpha_!\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_n\|^2 = (\alpha_1\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_2) \cdot (\alpha_1\mathbb{v}_1 + \cdots \alpha_n\mathbb{v}_n) = \sum_{i=1}^{n} \sum_{j=1}^{n} \alpha_i\alpha_j(\mathbb{v}_i \cdot \mathbb{v}_j) = \sum_{i=1}^{n} \alpha_i^2\|\mathbb{v}_i\|^2 \mbox{ since } \mathbb{v}_i \cdot \mathbb{v}_j = 0 \mbox { for } i \ne j.$$
 
 그리고 basis 들이 정규직교기저면, $\|\mathbb{v}\| = \sum {a_i}^2$ 가 성립한다. 이걸 일반적인 방법으로 옮긴게 **Gram-Schmidt Algorithm** 이라고 한다.
 
@@ -55,7 +55,7 @@ $$\det \mathbb{L} \le \prod_{i = 1}^n \|\mathbb{v}_i\|$$
 
 **Minkowski's first theorem** : lattice $\mathbb{L}$ 의 shortest vector 를 $\mathbb{v}$ 라고 하고, 차원을 ${D}$ 라고 하자. 그럼 다음과 같은 부등식이 성립한다.
 
-$$ \mathbb{v} \le \sqrt{D}|\det(\mathbb{L})|^{1/D}$$
+$$\mathbb{v} \le \sqrt{D}|\det(\mathbb{L})|^{1/D}$$
 
 이와 같은 정리를 소개하는 이유는, 가끔 SVP를 구해서 올바른 키를 찾은거같아도 안 되는 경우가 있는데, 그럴 때 위 부등식을 만족하는지 확인하면 좋다. 두 번째 이유는 그냥 신기해서....
 
