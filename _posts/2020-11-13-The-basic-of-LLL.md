@@ -61,7 +61,7 @@ $$\det \mathbb{L} \le \prod_{i = 1}^n \|\mathbb{v}_i\|$$
 
 **Minkowski's first theorem** : lattice $\mathbb{L}$ 의 shortest vector 를 $\mathbb{v}$ 라고 하고, 차원을 ${D}$ 라고 하자. 그럼 다음과 같은 부등식이 성립한다.
 
-$\mathbb{v} \le \sqrt{D}|\det(\mathbb{L})|^{1/D}$
+$ \mathbb{v} \le \sqrt{D}|\det(\mathbb{L})|^{1/D} $
 
 이와 같은 정리를 소개하는 이유는, 가끔 SVP를 구해서 올바른 키를 찾은거같아도 안 되는 경우가 있는데, 그럴 때 위 부등식을 만족하는지 확인하면 좋다. 두 번째 이유는 그냥 신기해서....
 
