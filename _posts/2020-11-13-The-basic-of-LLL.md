@@ -18,7 +18,7 @@ use_math: true
 
 **Dimension** : 어떠한 vector space $\mathbb{V} \in \mathbb{R}^m$ 를 정의하자.
 
-- $$\mathbb{V}$$ 의 vasis가 존재하고,
+- $$\mathbb{V}$$ 의 basis가 존재하고,
 - 어떠한 $\mathbb{V}$ 의 두 basis가 동일한 수의 원소를 가지고 있다면, basis의 원소 갯수는 $\mathbb{V}$ 의 차원이라고 한다.
 
 **Orthogonal** : 어떠한 $m$ 차원 실수공간 $\mathbb{R}^m$ 의 벡터공간 $\mathbf{V}$ 의 벡터 $\mathbb{u}, \mathbb{w}$ 를 정의하자. 이때 $\mathbb{u} = (x_1, x_2, \ldots, x_m), \mathbb{w} = (y_1, y_2, \ldots, y_m) $ 라고 하면, 두 벡터의 내적곱은 $\mathbb{u} \cdot \mathbb{w} = x_1y_1 + x_2y_2 + \ldots + x_my_m$  라고 하고, 두 내적곱의 결과가 0이면 두 벡터는 **orthogonal** (직교) 한다고 한다. 
@@ -31,7 +31,7 @@ use_math: true
 
 그리고 만약 $\mathbb{v}_1, \mathbb{v}_2, \ldots \mathbb{v}_n$ 가 정규직교기저고 $\mathbb{v} = \alpha_1\mathbb{v}_1 + \alpha_2\mathbb{v}_2 + \cdots + \alpha_n\mathbb{v}_n$ 가 기저들의 선형 결합으로 표현된다면, 
 
-$$\|\mathbb{v}\| = \|\ \alpha_!\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_n\|^2 = (\alpha_1\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_2) \cdot (\alpha_1\mathbb{v}_1 + \cdots \alpha_n\mathbb{v}_n) = \sum_{i=1}^{n} \sum_{j=1}^{n} \alpha_i\alpha_j(\mathbb{v}_i \cdot \mathbb{v}_j) = \sum_{i=1}^{n} \alpha_i^2\|\mathbb{v}_i\|^2 \mbox{ since } \mathbb{v}_i \cdot \mathbb{v}_j = 0 \mbox { for } i \ne j.$$
+$\|\mathbb{v}\| = \|\ \alpha_!\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_n\|^2 = (\alpha_1\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_2) \cdot (\alpha_1\mathbb{v}_1 + \cdots \alpha_n\mathbb{v}_n) = \sum_{i=1}^{n} \sum_{j=1}^{n} \alpha_i\alpha_j(\mathbb{v}_i \cdot \mathbb{v}_j) = \sum_{i=1}^{n} \alpha_i^2\|\mathbb{v}_i\|^2 \mbox{ since } \mathbb{v}_i \cdot \mathbb{v}_j = 0 \mbox { for } i \ne j.$
 
 그리고 basis 들이 정규직교기저면, $\|\mathbb{v}\| = \sum {a_i}^2$ 가 성립한다. 이걸 일반적인 방법으로 옮긴게 **Gram-Schmidt Algorithm** 이라고 한다.
 
