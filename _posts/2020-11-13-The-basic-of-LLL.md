@@ -14,7 +14,9 @@ use_math: true
 
 **Independece** : 벡터들의 집합 $\mathbf{v}_1,\mathbf{v}_2,\ldots,\mathbf{v}_k \in \mathbb{V}$ 가 Linearly independent 할 조건은 $\alpha_1\mathbf{v}_1 + \alpha_2\mathbf{v}_2,+\cdots,+\alpha_k\mathbf{v}_k = \mathbf{0}$ 이 되는 해가 오직 $\alpha_1 = \alpha_2 = \cdots = \alpha_k = \mathbf{0}$ 로 유일하면 된다. 참고로 저 영벡터를 만드는 해가 $\alpha_1 = \alpha_2 = \ldots = \alpha_k = \mathbf{0}$ 말고 더 있으면 **Linearly dependent** 하다고 한다. 
 
-**Basis** : 어떠한 vector space $\mathbb{V}$ 의 basis (기저) 라 함은 $\mathbf{V}$ 를 span하는 linearly independent vector들 $\mathbb{v}_1, \mathbb{v}_2,\ldots\mathbb{v}_n$ 의 집합을 말한다. 그리고 이러한 basis 들은 모든 벡터 $\mathbf{w} \in \mathbb{V}$ 가 특별한 해 $\alpha_1,\ldots,\alpha_n \in \mathbb{R}$ 에 대해 다음과 같은 형태로 쓸 수 있음을 말한다. $$\mathbf{w} = \alpha_1\mathbf{v}_1 + \alpha_2\mathbf{v}_2+\cdots+\alpha_n\mathbf{v}_n$$
+**Basis** : 어떠한 vector space $\mathbb{V}$ 의 basis (기저) 라 함은 $\mathbf{V}$ 를 span하는 linearly independent vector들 $\mathbb{v}_1, \mathbb{v}_2,\ldots\mathbb{v}_n$ 의 집합을 말한다. 그리고 이러한 basis 들은 모든 벡터 $\mathbf{w} \in \mathbb{V}$ 가 특별한 해 $\alpha_1,\ldots,\alpha_n \in \mathbb{R}$ 에 대해 다음과 같은 형태로 쓸 수 있음을 말한다. 
+
+$$\mathbf{w} = \alpha_1\mathbf{v}_1 + \alpha_2\mathbf{v}_2+\cdots+\alpha_n\mathbf{v}_n$$
 
 **Dimension** : 어떠한 vector space $\mathbb{V} \in \mathbb{R}^m$ 를 정의하자.
 
