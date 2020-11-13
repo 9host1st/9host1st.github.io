@@ -39,9 +39,15 @@ $$\|\mathbb{v}\| = \|\ \alpha_!\mathbb{v}_1 + \cdots + \alpha_n\mathbb{v}_n\|^2 
 
 ## Lattice
 
-$m$ 차원 실수 공간의 basis vecvtor  $\mathbb{v}_1, \mathbb{v}_2, \cdots \mathbb{v}_n$ 을 정의하자. 이 때 **Lattice** $\mathbb{L}$ 이란  basis vector 들의 integer combination으로 만들어진 subspace 이다.. 즉 $\mathbb{L} = \mathbb{L}(\mathbb{V}) = \{\sum_{i=1}^n c_i\mathbb{v}_i : c_i \in \mathbb{Z} \}, \mathbb{B} = (\mathbb{b}_1, \mathbb{b}_2, \ldots, \mathbb{b}_n) \mbox{ is basis of }\mathbb{L}$ 이다. 그리고 선형대수를 좀 배웠으면 이러한 선형 결합을 행렬로 바꿀 수 있다는건 잘 알 것이다. 이렇게 만든 행렬의 determinant는 꽤나 중요하게 다뤄진다고 한다. 그럼 이제 이 행렬의 성질을 조금씩 알아보자.
+$m$ 차원 실수 공간의 basis vecvtor  $\mathbb{v}_1, \mathbb{v}_2, \cdots \mathbb{v}_n$ 을 정의하자. 이 때 **Lattice** $\mathbb{L}$ 이란  basis vector 들의 integer combination으로 만들어진 subspace 이다. 즉, 
 
-이 행렬의 rank가 full rank라고 가정하면,  $\det L = |\det(\mathbb{v}_1, \mathbb{v}_2,\ldots\mathbb{v}_n)|$ 이다. 
+ $$\mathbb{L} = \mathbb{L}(\mathbb{V}) = \{\sum_{i=1}^n c_i\mathbb{v}_i : c_i \in \mathbb{Z} \}, \mathbb{B} = (\mathbb{b}_1, \mathbb{b}_2, \ldots, \mathbb{b}_n) \mbox{ is basis of }\mathbb{L}$$ 이다. 
+
+그리고 선형대수를 좀 배웠으면 이러한 선형 결합을 행렬로 바꿀 수 있다는건 잘 알 것이다. 이렇게 만든 행렬의 determinant는 꽤나 중요하게 다뤄진다고 한다. 그럼 이제 이 행렬의 성질을 조금씩 알아보자.
+
+이 행렬의 rank가 full rank라고 가정하면,  
+
+$$\det L = |\det(\mathbb{v}_1, \mathbb{v}_2,\ldots\mathbb{v}_n)|$$ 이다. 
 
 **Hadamard’s inequality** : lattice $\mathbb{L}$ 의 determinant는 $\mathbb{L}$ 의 기저들의 노름끼리의 곱보다 항상 작거나 같다.
 
