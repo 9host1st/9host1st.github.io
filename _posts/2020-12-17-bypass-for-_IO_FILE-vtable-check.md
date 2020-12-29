@@ -119,4 +119,4 @@ void _IO_str_finish (_IO_FILE *fp, int dummy)
 }
 ```
 
-매우 심플한 코드이다. 3번째줄의 조건문만 통과하면 되는데, fp->_IO_buf_base가 존재하면 된다. 그러면 _s._free_buffer에 system 함수 주소 넣고 _IO_buf_base에 /bin/sh 문자열 주소등을 넣으면 쉘을 획득할 수 있다.
+매우 심플한 코드이다. 3번째줄의 조건문만 통과하면 되는데, fp->_IO_buf_base가 존재하면 된다. 그러면 _s._free_buffer에 system 함수 주소 넣고 _IO_buf_base에 /bin/sh 문자열 주소등을 넣으면 쉘을 획득할 수 있다
